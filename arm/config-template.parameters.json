@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterLocation": {
+            "value": "westeurope" 
+        },
+        "clusterName": {
+            "value": "arc-kind"
+        },
+        "configurationResourceName": {
+            "value": "realtime-config"
+        },
+        "operatorInstanceName": {
+            "value": "realtime-config"
+        },
+        "operatorNamespace": {
+            "value": "realtime"
+        },
+        "repositoryUrl": {
+            "value": "git@github.com:gbaeke/arc" 
+        },
+        "operatorParams": {
+            "value": "--git-path=config --git-user=gbaeke --git-email=user@example.com"
+        },
+        "operatorScope": {
+            "value": "namespace"
+        }
+    }
+}
